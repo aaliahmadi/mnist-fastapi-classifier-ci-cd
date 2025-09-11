@@ -34,7 +34,7 @@ mnist-fastapi-classifier/
 ```bash
 git clone https://github.com/AAliAhmadi/mnist-fastapi-classifier.git
 cd mnist-fastapi-classifier
-
+```
 
 2. Create a virtual environment (optional but recommended):
 
@@ -42,11 +42,11 @@ cd mnist-fastapi-classifier
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
-
+```
 
 3. Install dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ```bash
 uvicorn main:app --reload
-
+```
 
 2. Access the API:
 
@@ -67,7 +67,7 @@ uvicorn main:app --reload
 ```bash
 
 curl -X POST "http://127.0.0.1:8000/predict" -F "file=@path_to_your_digit_image.png"
-
+```
 
 Response example:
 
