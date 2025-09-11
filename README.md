@@ -15,7 +15,7 @@ You can upload an image of a digit (28x28 grayscale or RGB) and get its predicte
 ---
 
 ## Project Structure
-
+```
 mnist-fastapi-classifier/
 │
 ├── main.py # FastAPI application
@@ -23,7 +23,7 @@ mnist-fastapi-classifier/
 ├── requirements.txt # Python dependencies
 ├── README.md # This file
 └── .gitignore # Git ignore for temporary files
-
+```
 
 ---
 
@@ -32,22 +32,23 @@ mnist-fastapi-classifier/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/mnist-fastapi-classifier.git
+git clone https://github.com/AAliAhmadi/mnist-fastapi-classifier.git
 cd mnist-fastapi-classifier
 
 
 2. Create a virtual environment (optional but recommended):
 
-```bash
+```
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
-
+```
 
 3. Install dependencies:
 
-```bash
+```
 pip install -r requirements.txt
+```
 
 ## Usage
 
