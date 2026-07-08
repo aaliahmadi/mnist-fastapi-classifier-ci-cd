@@ -74,3 +74,28 @@ Response example:
 {
   "predicted_digit": 7
 }
+
+---
+
+## CI/CD Pipeline
+
+This project includes a GitHub Actions workflow that automates testing, building, and deployment.
+
+### Workflow Steps
+1. **Continuous Integration (CI)**: Runs on every `push` or `pull_request` to the `main` branch.
+   - Sets up Python 3.10.
+   - Installs dependencies and runs tests using `pytest`.
+2. **Continuous Deployment (CD)**: Runs after successful tests.
+   - Builds a Docker image of the FastAPI application.
+   - Publishes the image to **GitHub Container Registry (ghcr.io)**.
+
+### How to Use
+1. The workflow is defined in `.github/workflows/ci-cd.yml`.
+2. The Docker image is built using the `Dockerfile` in the project root.
+3. The image is tagged as `ghcr.io/aaliahmadi/mnist-fastapi-classifier:latest`.
+
+You can find the published package under the **Packages** section of this repository.
+
+For more details, check the workflow file and the Dockerfile in the repository.
+
+---
